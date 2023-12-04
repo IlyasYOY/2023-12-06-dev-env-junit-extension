@@ -29,7 +29,7 @@ class OrdersTest {
 
     @BeforeEach
     void createTempFile() throws IOException {
-        tempFile = Files.createTempFile("orders", "temp-file");
+        tempFile = Files.createTempFile(Path.of("/tmp"), "orders", "temp-file");
     }
 
     @AfterEach

@@ -63,7 +63,7 @@ public class TempFileExtension
         public ClosablePath() {
             log.debug("Create temp file...");
             try {
-                Path tempFile = Files.createTempFile("temp-file", "orders");
+                Path tempFile = Files.createTempFile(Path.of("/tmp"), "temp-file", "orders");
                 log.info("Temp file created: {}", tempFile);
                 this.file = tempFile;
                 TempFileExtension.this.file = tempFile;
