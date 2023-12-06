@@ -4,7 +4,7 @@ import org.assertj.core.api.AssertionsForClassTypes;
 import org.assertj.core.api.ThrowableAssert.ThrowingCallable;
 import lombok.experimental.UtilityClass;
 import net.datafaker.Faker;
-import ru.dev.env.junit.extensions.end.Order;
+import ru.dev.env.junit.extensions.start.Order;
 
 @UtilityClass
 public class Helpers {
